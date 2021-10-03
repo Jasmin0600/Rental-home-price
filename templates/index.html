@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<form action="/predict" method="post">
+
+    <input type="text" name="a" placeholder="bedroom"><br><br>
+    <input type="text" name="b" placeholder="bathrooms"><br><br>
+    <input type="text" name="c" placeholder="area"><br><br>
+
+
+    <select id="furnishing" name="d" >
+        <option selected="" value="" disabled selected>Select furnishing</option>
+        <option value="3">Unfurnished</option>
+        <option value="1">Semifurnished</option>
+        <option value="0">Furnished</option>
+        <option value="2">Unfurnishe</option>
+    </select><br><br>
+
+   <select id="available_for" name="e" >
+        <option selected="" value="" disabled selected>Select Available for</option>
+        <option value="0">All</option>
+        <option value="6">Family Only</option>
+        <option value="4">Family , Bachelors (Men Only)</option>
+        <option value="5">Family , Bachelors (Women Only)</option>
+        <option value="2">Bachelors (Men/Women)</option>
+        <option value="3">Bachelors (Women Only)</option>
+        <option value="1">Bachelors (Men Only)</option>
+        <option value="7">None</option>
+    </select><br><br>
+
+    <input type="text" name="f" placeholder="floor_number"><br><br>
+
+   <select id="facing" name="g" >
+        <option selected="" value="" disabled selected>Select facing</option>
+        <option value="8">West</option>
+        <option value="0">East</option>
+        <option value="7">South-West</option>
+        <option value="5">South</option>
+        <option value="1">No Direction</option>
+        <option value="2">North</option>
+        <option value="4">North-West</option>
+        <option value="6">South-East</option>
+        <option value="3">North-East</option>
+    </select><br><br>
+
+    <select id="floor_type" name="h" >
+        <option selected="" value="" disabled selected>Select floor_type</option>
+        <option value="5">Marble</option>
+        <option value="13">Vitrified</option>
+        <option value="6">Mosaic</option>
+        <option value="9">Polished concrete</option>
+        <option value="1">Ceramic</option>
+        <option value="7">Not provided</option>
+        <option value="14">Wood</option>
+        <option value="11">Stone</option>
+        <option value="10">Spartex</option>
+        <option value="8">Others</option>
+        <option value="3">Granite</option>
+        <option value="12">Vinyl</option>
+        <option value="2">Concrete</option>
+        <option value="0">Cement</option>
+        <option value="4">IPSFinish</option>
+    </select><br><br>
+
+
+    <select id="gate_community" name="i" >
+        <option selected="" value="" disabled selected>Select gate_community</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+    <select id="corner_pro" name="j" >
+        <option selected="" value="" disabled selected>Select corner_pro</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+    <input type="text" name="k" placeholder="parking"><br><br>
+
+    <select id="wheelchairadption" name="l" >
+        <option selected="" value="" disabled selected>Select wheelchair adaption</option>
+        <option value="0">None</option>
+        <option value="1">Yes</option>
+    </select><br><br>
+
+    <select id="petfacility" name="m" >
+        <option selected="" value="" disabled selected>Select pet facility</option>
+        <option value="0">None</option>
+        <option value="1">Yes</option>
+    </select><br><br>
+
+
+    <input type="text" name="n" placeholder="aggDur" ><br><br>
+    <input type="text" name="o" placeholder="noticeDur" ><br><br>
+
+
+    <select id="lightbill" name="p" >
+        <option selected="" value="" disabled selected>lightbill payed by</option>
+        <option value="0">Payed by tenant</option>
+        <option value="1">Owner would pay</option>
+    </select><br><br>
+
+    <select id="powerbackup" name="q" >
+        <option selected="" value="" disabled selected>number of powerbackup</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="1">2</option>
+    </select><br><br>
+
+
+
+    <select id="propertyage" name="r">
+        <option selected="" value="" disabled selected>Select property age</option>
+        <option value="3">5 to 10 Year Old</option>
+        <option value="1">1 to 5 Year Old</option>
+        <option value="2">10+ Year Old</option>
+        <option value="0">0 to 1 Year Old</option>
+        <option value="5">Under Construction</option>
+        <option value="4">NO age</option>
+    </select><br><br>
+
+
+    <select id="no_room" name="s" >
+        <option selected="" value="" disabled selected>Are there rooms?</option>
+        <option value="0">Yes</option>
+        <option value="1">No</option>
+    </select><br><br>
+
+    <select id="pooja_room" name="t" >
+        <option selected="" value="" disabled selected>Is there pooja room?</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+
+    <select id="study_room" name="u" >
+        <option selected="" value="" disabled selected>Is there study room?</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+    <select id="others" name="v" >
+        <option selected="" value="" disabled selected>Are there  any special room?</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+    <select id="servant_room" name="w" >
+        <option selected="" value="" disabled selected>Is there  any servant room?</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+    <select id="store_room" name="x" >
+        <option selected="" value="" disabled selected>Is there  any store room?</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+
+    <input type="text" name="y" placeholder="brokerage amount" ><br><br>
+    <input type="text" name="z" placeholder="deposit amount" ><br><br>
+    <input type="text" name="za" placeholder="mnt_amt" ><br><br>
+
+    <button type="submit" class="btn rounded ex_btn">Predict</button>
+</form>
+ <h3> {{ prediction_text }}</h3>
+
+
+</body>
+</html>
+
