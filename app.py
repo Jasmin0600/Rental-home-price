@@ -17,4 +17,4 @@ def predict():
     return render_template('index.html', prediction_text='Rent of home you are looking for is {}Rs per month'.format(output_1))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
